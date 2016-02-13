@@ -54,24 +54,24 @@ public class Puzzle {
 
     //NOT DONE
 	public void checkAnswers(){
-
 		block1.checkAnswers();
 		block2.checkAnswers();
 		block3.checkAnswers();
 	}
+
 	//NOT DONE
 	public void setHLables(){
-
 	}
+
 	//NOT DONE
 	public void setVLables(){
-
 	}
 
 	//NOT DONE
 	public HBox returnHLables() {
 		return hLables;
 	}
+
 	//NOT DONE
 	public VBox returnVLables() {
 		return vLables;

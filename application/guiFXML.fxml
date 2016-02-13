@@ -28,7 +28,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TabPane id="tabPane" layoutX="512.0" layoutY="76.0" prefHeight="389.0" prefWidth="241.0" style="-fx-background-color: #5AC8F2;" tabClosingPolicy="UNAVAILABLE">
+      <TabPane id="tabPane" layoutX="512.0" layoutY="76.0" prefHeight="194.0" prefWidth="241.0" style="-fx-background-color: #5AC8F2;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab id="cluestab" style="-fx-font-size: 12;" text="Clues">
                <content>
@@ -53,14 +53,15 @@
         </tabs>
       </TabPane>
       <Button fx:id="hints" layoutX="62.0" layoutY="472.0" mnemonicParsing="false" text="Hint" />
-      <Button id="clearerrors" layoutX="120.0" layoutY="472.0" mnemonicParsing="false" text="Clear Errors" />
-      <Button id="startover" layoutX="228.0" layoutY="472.0" mnemonicParsing="false" text="Start Over" />
+      <Button fx:id="clearErrors" layoutX="120.0" layoutY="472.0" mnemonicParsing="false" text="Clear Errors" />
+      <Button fx:id="startOver" layoutX="228.0" layoutY="472.0" mnemonicParsing="false" text="Start Over" />
       <Pane layoutX="40.0" layoutY="76.0" prefHeight="389.0" prefWidth="464.0" style="-fx-background-color: #F0FFFF;">
          <children>
-            <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" />
+            <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: ;" />
             <VBox layoutX="48.0" layoutY="114.0" prefHeight="240.0" prefWidth="100.0" style="-fx-background-color: black;" />
             <HBox layoutX="148.0" layoutY="14.0" prefHeight="100.0" prefWidth="240.0" style="-fx-background-color: black;" />
          </children>
       </Pane>
+      <Pane id="Background-Goal-Pane" layoutX="512.0" layoutY="282.0" prefHeight="183.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;" />
    </children>
 </Pane>

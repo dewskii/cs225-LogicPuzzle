@@ -12,6 +12,7 @@ public class MainController implements Initializable{
 	@FXML private Pane puzzleArea;
 	@FXML private Button startOver;
 	@FXML private Button hints;
+	@FXML private Button clearErrors;
 
 	private int[][] answers = { {0,0,1,0,0,0,1,0},
                                 {0,0,0,1,1,0,0,0},
