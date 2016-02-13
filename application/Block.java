@@ -93,10 +93,6 @@ public class Block extends GridPane {
 			btn[row][j].setGraphic(new ImageView(imageBlank));
 		}
 
-
-
-
-
 	}
 
 	public void lockCells(int row, int column){
@@ -118,7 +114,12 @@ public class Block extends GridPane {
 		}
 	}
 
-	public void checkAnswers() {}
+    //NOT DONE
+	public void checkAnswers() {
+		for(int i = 0; i<cells.length; i++)
+			for(int j = 0; j<cells.length; j++){
+			}
+	}
 
 
 }

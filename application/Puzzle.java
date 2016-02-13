@@ -1,15 +1,19 @@
 package application;
 
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 public class Puzzle {
 	private Block block1;
 	private Block block2;
 	private Block block3;
+	private HBox hLables;
+	private VBox vLables;
 	private GridPane masterGrid;
 
 	public Puzzle(int[][] answers){
-		initializePuzzle(answers);
+		 initializePuzzle(answers);
 		 masterGrid = new GridPane();
 		 GridPane grid1 = block1.returnGrid();
          GridPane grid2 = block2.returnGrid();
@@ -48,4 +52,31 @@ public class Puzzle {
 		return masterGrid;
 	}
 
-}
+    //NOT DONE
+	public void checkAnswers(){
+
+		block1.checkAnswers();
+		block2.checkAnswers();
+		block3.checkAnswers();
+	}
+	//NOT DONE
+	public void setHLables(){
+
+	}
+	//NOT DONE
+	public void setVLables(){
+
+	}
+
+	//NOT DONE
+	public HBox returnHLables() {
+		return hLables;
+	}
+	//NOT DONE
+	public VBox returnVLables() {
+		return vLables;
+	}
+
+	}
+
+
