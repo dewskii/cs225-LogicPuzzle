@@ -52,6 +52,15 @@ public class Puzzle {
 		return masterGrid;
 	}
 
+
+	//NOT DONE
+	public void showHints(){
+
+	}
+	//NOT DONE
+	public void clearErrors(){
+	}
+
     //NOT DONE
 	public void checkAnswers(){
 		block1.checkAnswers();

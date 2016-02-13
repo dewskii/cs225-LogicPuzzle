@@ -4,15 +4,15 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
 
-<Pane fx:controller="application.MainController" id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="777.0" style="-fx-background-color: #5AC8F2;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="application.MainController" id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="777.0" style="-fx-background-color: #5AC8F2;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar id="menuBar" prefHeight="29.0" prefWidth="777.0" style="-fx-background-color: #5FA8F3;">
         <menus>
@@ -39,22 +39,16 @@
                <content>
                   <Pane prefHeight="267.0" prefWidth="138.0" style="-fx-background-color: #FFBC58;">
                      <children>
-                        <TextArea layoutX="6.0" layoutY="14.0" prefHeight="296.0" prefWidth="219.0" />
-                        <ScrollBar layoutX="208.0" layoutY="16.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="17.0" />
+                        <TextArea fx:id="textArea" layoutX="12.0" layoutY="9.0" prefHeight="144.0" prefWidth="218.0" />
                      </children>
                   </Pane>
                </content>
           </Tab>
-            <Tab id="answerstab" style="-fx-font-size: 12;" text="Answers">
-               <content>
-                  <Pane prefHeight="268.0" prefWidth="192.0" style="-fx-background-color: #FFBC58;" />
-               </content>
-            </Tab>
         </tabs>
       </TabPane>
       <Button fx:id="hints" layoutX="62.0" layoutY="472.0" mnemonicParsing="false" text="Hint" />
-      <Button fx:id="clearErrors" layoutX="120.0" layoutY="472.0" mnemonicParsing="false" text="Clear Errors" />
-      <Button fx:id="startOver" layoutX="228.0" layoutY="472.0" mnemonicParsing="false" text="Start Over" />
+      <Button id="clearerrors" fx:id="clearErrors" layoutX="120.0" layoutY="472.0" mnemonicParsing="false" text="Clear Errors" />
+      <Button id="startover" fx:id="startOver" layoutX="228.0" layoutY="472.0" mnemonicParsing="false" text="Start Over" />
       <Pane layoutX="40.0" layoutY="76.0" prefHeight="389.0" prefWidth="464.0" style="-fx-background-color: #F0FFFF;">
          <children>
             <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" />
@@ -62,6 +56,10 @@
             <HBox layoutX="148.0" layoutY="14.0" prefHeight="100.0" prefWidth="240.0" style="-fx-background-color: black;" />
          </children>
       </Pane>
-      <Pane id="Background-Goal-Pane" layoutX="512.0" layoutY="282.0" prefHeight="183.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;" />
+      <Pane id="Background-Goal-Pane" layoutX="512.0" layoutY="282.0" prefHeight="183.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;">
+         <children>
+            <TextFlow fx:id="backStory" layoutX="6.0" layoutY="6.0" prefHeight="174.0" prefWidth="228.0" />
+         </children></Pane>
+      <Button fx:id="submitAnswers" layoutX="331.0" layoutY="472.0" mnemonicParsing="false" text="Submit Answers" />
    </children>
 </Pane>
