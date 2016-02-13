@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane fx:controller="application.MainController" id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="777.0" style="-fx-background-color: #5AC8F2;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="application.MainController" id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="777.0" style="-fx-background-color: #5AC8F2;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar id="menuBar" prefHeight="29.0" prefWidth="777.0" style="-fx-background-color: #5FA8F3;">
         <menus>
@@ -57,7 +57,7 @@
       <Button fx:id="startOver" layoutX="228.0" layoutY="472.0" mnemonicParsing="false" text="Start Over" />
       <Pane layoutX="40.0" layoutY="76.0" prefHeight="389.0" prefWidth="464.0" style="-fx-background-color: #F0FFFF;">
          <children>
-            <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: ;" />
+            <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" />
             <VBox layoutX="48.0" layoutY="114.0" prefHeight="240.0" prefWidth="100.0" style="-fx-background-color: black;" />
             <HBox layoutX="148.0" layoutY="14.0" prefHeight="100.0" prefWidth="240.0" style="-fx-background-color: black;" />
          </children>
