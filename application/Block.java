@@ -172,11 +172,13 @@ public class Block extends GridPane {
 			int row = i;
 			int column = j;
 			if(cells[row][column].getUserState() == 'X'){
+				cells[row][column].setLockState(false);
 				cells[row][column].setUserState('B');
 				btn[row][column].setGraphic(new ImageView(imageBlank));
 				return;
 						}
 			if(cells[row][column].getUserState() == 'O'){
+				cells[row][column].setLockState(false);
 				cells[row][column].setUserState('B');
 				btn[row][column].setGraphic(new ImageView(imageBlank));
 				return;
