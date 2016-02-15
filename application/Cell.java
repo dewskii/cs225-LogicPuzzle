@@ -9,15 +9,15 @@ public class Cell {
    char configState;
    char userState;
 
-   public Cell(char configState) {
-       this.configState = configState;
+   public Cell(char aconfigState) {
+       configState = aconfigState;
        userState = 'B';
        isLocked = false;
    }
 
-   public void setUserState(char userState) {
+   public void setUserState(char auserState) {
           //TODO Throw Error if not B, X, O
-          this.userState = userState;
+          userState = auserState;
     }
 
    public char getUserState() {
@@ -30,6 +30,12 @@ public class Cell {
 
    public boolean isLocked() {
 	   return isLocked;
+   }
+
+   public boolean areSame(){
+	   if (configState == userState)
+		   return true;
+	   return false;
    }
 
    public char getConfigState() {

@@ -18,7 +18,7 @@
         <menus>
           <Menu id="menuFile" mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="closeButton" onAction="#closeButtonAction" mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
           <Menu id="menuHelp" mnemonicParsing="false" text="Help">
@@ -30,9 +30,9 @@
       </MenuBar>
       <TabPane id="tabPane" layoutX="512.0" layoutY="76.0" prefHeight="194.0" prefWidth="241.0" style="-fx-background-color: #5AC8F2;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab id="cluestab" style="-fx-font-size: 12;" text="Clues">
+          <Tab id="clues" style="-fx-font-size: 12;" text="Clues">
                <content>
-                  <Pane prefHeight="360.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;" />
+                  <Pane fx:id="cluesTab" layoutX="512.0" layoutY="90.0" prefHeight="360.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;" />
                </content>
           </Tab>
           <Tab id="notestab" style="-fx-font-size: 12;" text="Notes">
@@ -52,8 +52,8 @@
       <Pane layoutX="40.0" layoutY="76.0" prefHeight="389.0" prefWidth="464.0" style="-fx-background-color: #F0FFFF;">
          <children>
             <Pane fx:id="puzzleArea" layoutX="148.0" layoutY="114.0" prefHeight="240.0" prefWidth="240.0" />
-            <VBox layoutX="48.0" layoutY="114.0" prefHeight="240.0" prefWidth="100.0" style="-fx-background-color: black;" />
-            <HBox layoutX="148.0" layoutY="14.0" prefHeight="100.0" prefWidth="240.0" style="-fx-background-color: black;" />
+            <Pane fx:id="vLables" layoutX="95.0" layoutY="114.0" prefHeight="240.0" prefWidth="50.0" />
+            <Pane fx:id="hLables" layoutX="148.0" layoutY="80.0" prefHeight="30.0" prefWidth="240.0" />
          </children>
       </Pane>
       <Pane id="Background-Goal-Pane" layoutX="512.0" layoutY="282.0" prefHeight="183.0" prefWidth="241.0" style="-fx-background-color: #FFBC58;">
